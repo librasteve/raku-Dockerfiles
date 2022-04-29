@@ -43,8 +43,8 @@ Client run:
 
 # Jupyter Instructions
 
-```jupyter notebook --port=8888 --no-browser --allow-root --ip=0.0.0.0```
-```http://ubuntu:8888``` in browser
+* ```jupyter notebook --port=8888 --no-browser --allow-root --ip=0.0.0.0```
+* ```http://ubuntu:8888``` in browser
 
 
 
