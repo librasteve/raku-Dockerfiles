@@ -24,3 +24,4 @@ Approach / naming:
 Notes:
 1. not sure can build polars on jupyter/scipy-notebook?? (so maybe stage-0 is pluggable with vanilla ubuntu)
 2. hmmm maybe we have two stacks here (with / without jupyter)
+3. Binder requires  FROM jupyter/scipy-notebook to have a tag (not 'latest') - may need to parameterize
