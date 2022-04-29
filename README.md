@@ -30,16 +30,16 @@ Notes:
 
 Client build arm64 on M1 vftools:
 
-```docker build --no-cache -t p6steve/rakudo:scipynb-2022.02-arm64 .```
-```docker push p6steve/rakudo:scipynb-2022.02-arm64```
+* ```docker build --no-cache -t p6steve/rakudo:scipynb-2022.02-arm64 .```
+* ```docker push p6steve/rakudo:scipynb-2022.02-arm64```
 
 Client build amd64 on M1 Docker Desktop:
 
 Client run:
 
-```docker run -it -p 8888:8888 p6steve/raku-dan:pandas-2022.02-arm64```
-```docker ps```
-```docker exec -it cont_name /bin/bash```
+* ```docker run -it -p 8888:8888 p6steve/raku-dan:pandas-2022.02-arm64```
+* ```docker ps```
+* ```docker exec -it cont_name /bin/bash```
 
 # Jupyter Instructions
 
