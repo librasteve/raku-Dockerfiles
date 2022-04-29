@@ -25,7 +25,8 @@ RUN mkdir rakudo \
     && rm -rf rakudo rakudo.tar.gz \
     && git clone -b master --single-branch https://github.com/ugexe/zef.git \
     && cd zef && raku -I. bin/zef install . \
-    && cd ..  && rm -rf zef
+    && cd ..  && rm -rf zef \
+    && zef install Linenoise App::Mi6 App::Prove6
 
 #USER ${NB_UID}
 
