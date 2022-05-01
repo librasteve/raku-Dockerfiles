@@ -1,6 +1,7 @@
 FROM p6steve/rakudo:scipynb-2022.02-arm64
 
-RUN zef install https://github.com/niner/Inline-Python.git --exclude="python3" \
+RUN    zef install -v Text::CSV \
+    && zef install https://github.com/niner/Inline-Python.git --exclude="python3" \
     && zef -v install git://github.com/bduggan/p6-jupyter-kernel.git \
     && jupyter-kernel.raku --generate-config
 
