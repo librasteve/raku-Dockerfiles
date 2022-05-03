@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build stage-1 Docker image
-      run: docker build . --file raku-Dockerfiles/stage-1/Dockerfile --tag p6steve/rakudo:scipynb-2022.02-arm64-$(date +%s) --platform linux/amd64
+      run: docker build --file raku-Dockerfiles/stage-1/Dockerfile --tag p6steve/rakudo:scipynb-2022.02-arm64-$(date +%s) --platform linux/amd64
