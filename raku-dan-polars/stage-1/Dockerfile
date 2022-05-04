@@ -1,6 +1,7 @@
 FROM --platform=linux/arm64 ubuntu:latest
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
+LABEL tag="p6steve/rakudo:ubuntu-latest-arm64"
 
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
