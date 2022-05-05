@@ -19,7 +19,7 @@ RUN    apt-get update && apt-get upgrade -y \
 
 RUN zef install Linenoise && zef uninstall Readline
 
-RUN apt-get install -y vim
+RUN apt-get install -y vim tree 
 
 RUN echo ' \
 set syntax=on\n \
