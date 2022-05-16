@@ -1,11 +1,9 @@
-FROM p6steve/rakudo:ipyjk-2022.02-arm64
+FROM p6steve/rakudo:ipyjk-2022.02-amd64
 
 USER root
 
 RUN    zef install https://github.com/p6steve/raku-dan.git \
-    && zef install https://github.com/p6steve/raku-dan-pandas.git \
-    && git clone https://github.com/p6steve/raku-Dan-Jupyter.git \
-    && cp -R raku-Dan-Jupyter/eg ${HOME}
+    && zef install https://github.com/p6steve/raku-dan-pandas.git
 
 #USER ${NB_UID}
 
