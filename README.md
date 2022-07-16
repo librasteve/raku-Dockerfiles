@@ -14,15 +14,10 @@ Requirements:
 * can be implemented as GH actions (later)
 
 Approach / naming:
-* stage-0: jupyter/scipy-notebook (ubuntu)   <=== supports both linux/arm64, linux/amd64
-* stage-0.5: utilities (vi and so on)   [needed?]
-* stage-1: rakudo from source && zef         <=== no modules "p6steve/rakudo:scipynb-2022.02-arm64"
-* stage-2: Inline::Python && Jupyter::Kernel <=== non p6steve deps "p6steve/rakudo:ipyjk-2022.02-arm64"
-* stage-3: raku-dan:pandas                   <=== Dan, Dan::Pandas "p6steve/raku-dan:pandas-2022.02-arm64"
-* ...later...
-* stage-3: raku-dan:polars                   <=== Rust NativeCall, Dan, Dan::Polars "p6steve/raku-dan:polars-2022.02-arm64"
-* stage-3: rpm-emuj                          <=== Physics::Measure and deps (Physics::Unit, Physics::Error, Physics::Constants)
-* stage-4: rpm-nyj                           <=== Physics::Navigation and Yacht::Navigation
+* rakudo-basic	ubuntu:latest => p6steve/rakudo:basic
+* rakudo-rusty	p6steve/rakudo:basic => p6steve/rakudo:rusty
+* rakudo-scipy	jupyter/scipy-notebook:... => p6steve/rakudo:scipy
+* rakudo-ipyjk	p6steve/rakudo:scipy => p6steve/rakudo:ipyjk
 
 Notes:
 1. not sure can build polars on jupyter/scipy-notebook?? (so maybe stage-0 is pluggable with vanilla ubuntu)
