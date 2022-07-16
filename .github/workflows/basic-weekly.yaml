@@ -1,9 +1,9 @@
-name: Polars Stage 1 CI to Docker hub
+name: p6steve/rakudo:basic to Docker Hub
 
 on:
   push:
   schedule:
-      - cron: "2 0 * * *"
+      - cron: "21 3 * * 4"
 
 jobs:
   build-nightly:
@@ -24,9 +24,9 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: raku-dan-polars/stage-1/
-          file: ./raku-dan-polars/stage-1/Dockerfile
+          context: rakudo-basic
+          file: ./rakudo-basic/Dockerfile
           push: true
-          tags: p6steve/polars-s1:nightly
+          tags: p6steve/rakudo:basic
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
