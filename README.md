@@ -14,10 +14,12 @@ Requirements:
 * can be implemented as GH actions (later)
 
 Approach / naming:
-* rakudo-basic	ubuntu:latest => p6steve/rakudo:basic
-* rakudo-rusty	p6steve/rakudo:basic => p6steve/rakudo:rusty
-* rakudo-scipy	jupyter/scipy-notebook:... => p6steve/rakudo:scipy
-* rakudo-ipyjk	p6steve/rakudo:scipy => p6steve/rakudo:ipyjk
+| dir:         | from:                      | tag:                 |
+|--------------|----------------------------|----------------------|
+| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic |
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |
+| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |
+| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |
 
 Notes:
 1. not sure can build polars on jupyter/scipy-notebook?? (so maybe stage-0 is pluggable with vanilla ubuntu)
