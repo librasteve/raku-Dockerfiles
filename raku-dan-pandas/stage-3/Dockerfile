@@ -2,8 +2,7 @@ FROM p6steve/rakudo:ipyjk-2022.02-amd64
 
 USER root
 
-RUN    zef install https://github.com/p6steve/raku-dan.git \
-    && zef install https://github.com/p6steve/raku-dan-pandas.git
+RUN zef install https://github.com/p6steve/raku-dan-pandas.git
 
 #USER ${NB_UID}
 
