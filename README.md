@@ -28,7 +28,7 @@ Notes:
 
 # GH Actions
 
-Each Dockerfile has a weekly build GitHub Action that pushes the latest image to Docker Hub.
+Each Dockerfile has a weekly build GitHub Action that pushes the latest image to Docker Hub. These take ~85 mins each (!) to run. You can go much faster on a laptop.
 
 # Docker Instructions
 
