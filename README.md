@@ -1,6 +1,12 @@
 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 [![p6steve/rakudo:basic to Docker Hub](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-weekly.yaml)
 
+# TODOs
+- [ ] multiarch
+- [ ] rakudo:rusty
+- [ ] rakudo:scipy
+- [ ] rakudo:ipyjk
+
 # raku-Dockerfiles
 Common Dockerfiles for p6steve/raku modules (test and deploy)
 
