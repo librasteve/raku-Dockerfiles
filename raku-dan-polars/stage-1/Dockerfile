@@ -1,4 +1,5 @@
 FROM --platform=linux/arm64 ubuntu:latest
+#cover arm64 and amd64 with buildx
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
 LABEL tag="p6steve/rakudo:ubuntu-latest-arm64"
