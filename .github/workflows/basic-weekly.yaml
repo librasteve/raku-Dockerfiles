@@ -6,7 +6,7 @@ on:
       - cron: "21 3 * * 4"
 
 jobs:
-  build-nightly:
+  build-basic:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
