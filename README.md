@@ -22,9 +22,8 @@ Approach / naming:
 | rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |
 
 Notes:
-1. not sure can build polars on jupyter/scipy-notebook?? (so maybe stage-0 is pluggable with vanilla ubuntu)
-2. hmmm maybe we have two stacks here (with / without jupyter)
-3. Binder requires  FROM jupyter/scipy-notebook to have a tag (not 'latest') - may need to parameterize
+1. We have two stacks here (ubuntu+rakudo+rust, jupyter+rakudo+Inline::Python)
+1. Binder requires  FROM jupyter/scipy-notebook to have a tag (not 'latest') - may need to parameterize
 
 # Docker Instructions
 
