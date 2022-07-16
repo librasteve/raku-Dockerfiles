@@ -26,6 +26,10 @@ Notes:
 1. We have two stacks here (ubuntu+rakudo+rust, jupyter+rakudo+Inline::Python)
 1. Binder requires  FROM jupyter/scipy-notebook to have a tag (not 'latest') - may need to parameterize
 
+# GH Actions
+
+Each Dockerfile has a weekly build GitHub Action that pushes the latest image to Docker Hub.
+
 # Docker Instructions
 
 Client build arm64 on M1 vftools:
