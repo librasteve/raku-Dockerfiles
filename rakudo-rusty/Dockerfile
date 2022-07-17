@@ -1,7 +1,4 @@
-#FROM --platform=linux/arm64 p6steve/rakudo:basic
-
-#FROM p6steve/basic-ma
-FROM --platform=linux/amd64 p6steve/basic-ma
+FROM p6steve/basic-ma
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
 LABEL tag="p6steve/rakudo:rusty"
