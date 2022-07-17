@@ -9,7 +9,7 @@ on:
       - cron: "21 3 * * 4"
 
 jobs:
-  build-basic:
+  build-basic-ma:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,7 +35,7 @@ jobs:
         with:
           context: basic-ma
           file: ./basic-ma/Dockerfile
-          tags: p6steve/basic-ma
+          tags: p6steve/rakudo:basic
           push: true
           platforms: linux/arm64,linux/amd64
 
