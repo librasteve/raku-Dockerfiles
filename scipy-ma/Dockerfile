@@ -1,5 +1,9 @@
-FROM jupyter/scipy-notebook:4b830d5897d8
+FROM jupyter/scipy-notebook:latest
 #must have tag for Binder (not 'latest')
+#covers arm64 and amd64 with buildx
+
+LABEL maintainer="p6steve <p6steve@furnival.net>"
+LABEL tag="p6steve/rakudo:basic"
 
 ENV PATH=$PATH:/usr/share/perl6/site/bin
 
