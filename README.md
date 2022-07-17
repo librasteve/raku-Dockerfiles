@@ -19,8 +19,8 @@ Requirements:
 Approach / naming:
 | dir:         | from:                      | tag:                 | time:  | stack:  | layer: | platform:   |
 |--------------|----------------------------|----------------------|--------|---------|--------|-------------|
-| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min | no-jupe |    0   |  multi[2]   |
-| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min | no-jupe |    1   |  multi[2]   |
+| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min | no-jupe |    0   |  multiarch  |
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min | no-jupe |    1   |  multiarch  |
 | rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  19min | jupyter |    0   | linux/amd64 |
 | rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |        | jupyter |    1   | linux/amd64 |
 
