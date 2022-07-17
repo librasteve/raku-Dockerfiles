@@ -3,10 +3,6 @@
 [![rakudo:scipy-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-ma-weekly.yaml)
 [![rakudo:ipyjk-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml)
 
-# TODOs
-- [ ] rakudo:scipy
-- [ ] rakudo:ipyjk
-
 # raku-Dockerfiles
 Common Dockerfiles for p6steve/raku modules (test and deploy)
 
