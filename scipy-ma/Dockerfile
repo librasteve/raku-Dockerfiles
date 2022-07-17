@@ -17,20 +17,14 @@ RUN buildDeps="libc6-dev libencode-perl libzstd-dev libssl-dev \
     && apt-get install -y --no-install-recommends build-essential curl wget $buildDeps \
     && rm -rf /var/lib/apt/lists/* 
 
-RUN mkdir rakudo \
-    && wget -O rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/2022.02/rakudo-2022.02.tar.gz \
-    && tar xzf rakudo.tar.gz --strip-components=1 -C rakudo \
-    && ( \ 
-        cd rakudo && git init \
-        && perl Configure.pl --prefix=/usr --gen-moar --gen-nqp \
-        --backends=moar --moar-option='--toolchain=gnu' --relocatable \
-        && make && make install \
-    ) \ 
-    && rm -rf rakudo rakudo.tar.gz \
-    && git clone -b master --single-branch https://github.com/ugexe/zef.git \
-    && cd zef && raku -I. bin/zef install . \
-    && cd ..  && rm -rf zef \
-    && zef install Linenoise App::Mi6 App::Prove6
+RUN mkdir ~/rakudo && cd ~/rakudo \
+    && curl -LJO https://rakudo.org/latest/star/src \
+    && tar -xzf rakudo-star-*.tar.gz \
+    && mv rakudo-star-*/* . && rm -fr rakudo-star-* \
+    && ./bin/rstar install
+
+RUN zef install Linenoise App::Mi6 App::Prove6 \
+    && zef uninstall Readline
 
 #USER ${NB_UID}
 
