@@ -6,7 +6,7 @@ on:
       - rusty-ma/Dockerfile
       - .github/workflows/rusty-ma-weekly.yaml
   schedule:
-      - cron: "21 3 * * 4"
+      - cron: "24 3 * * 4"
 
 jobs:
   build-rusty-ma:
