@@ -1,4 +1,4 @@
-FROM p6steve/basic-ma
+FROM p6steve/rakudo:basic
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
 LABEL tag="p6steve/rakudo:rusty"
