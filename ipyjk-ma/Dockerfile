@@ -1,4 +1,7 @@
-FROM p6steve/rakudo:scipynb-2022.02-arm64
+FROM p6steve/rakudo:scipy
+
+LABEL maintainer="p6steve <p6steve@furnival.net>"
+LABEL tag="p6steve/rakudo:ipyjk
 
 RUN    zef install -v Text::CSV \
     && zef install https://github.com/niner/Inline-Python.git --exclude="python3" \
