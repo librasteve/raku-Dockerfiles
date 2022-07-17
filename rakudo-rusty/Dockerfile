@@ -1,4 +1,7 @@
-FROM --platform=linux/arm64 p6steve/rakudo:ubuntu-latest-arm64 
+FROM --platform=linux/arm64 p6steve/rakudo:basic
+
+LABEL maintainer="p6steve <p6steve@furnival.net>"
+LABEL tag="p6steve/rakudo:rusty"
 
 ENV PATH=$PATH:~/.cargo/bin
 
