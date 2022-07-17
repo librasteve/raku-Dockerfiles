@@ -23,7 +23,7 @@ Approach / naming:
 | dir:         | from:                      | tag:                 | time:  |
 |--------------|----------------------------|----------------------|--------|
 | rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min |
-| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |  |
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min |
 | rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  |
 | rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |  |
 
