@@ -1,4 +1,4 @@
-name: p6steve/rakudo:basic to Docker Hub
+name: rakudo:basic -> DH
 
 on:
   push:
