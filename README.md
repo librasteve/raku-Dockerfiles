@@ -12,22 +12,23 @@ Requirements:
 * run as CLI (default)
 * easy start jupyter-notebook (local)
 * binder compatible (if possible)
-* cover --platform linux/arm64, linux/amd64
-* combine with buildx as single ditro (later)
-* stacked, but limit branches
-* can be implemented as GH actions (later)
+* covers --platform linux/arm64, linux/amd64
+* combined with buildx as single image
+* stacked, but limited branching
+* weekly latest as GH actions
 
 Approach / naming:
-| dir:         | from:                      | tag:                 | time:  |
-|--------------|----------------------------|----------------------|--------|
-| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min |
-| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min |
-| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  |
-| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |  |
+| dir:         | from:                      | tag:                 | time:  | stack:  | layer: |
+|--------------|----------------------------|----------------------|--------|---------|--------|
+| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min | no-jupe |    0   | 
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min | no-jupe |    1   |
+| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  19min | jupyter |    0   |
+| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |        | jupyter |    1   |
 
 Notes:
-1. We have two stacks here (ubuntu+rakudo+rust, jupyter+rakudo+Inline::Python)
-1. Binder requires  FROM jupyter/scipy-notebook to have a tag (not 'latest') - may need to parameterize
+1. We have two stacks here ("no-jupe" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python)
+1. Binder requires FROM jupyter/scipy-notebook:xxx to have a tag (not 'latest') - need to build manually for now
+1. Binder & Lightsail require amd64
 
 # GH Actions
 
