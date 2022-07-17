@@ -1,6 +1,6 @@
 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
-[![p6steve/rakudo:basic to Docker Hub](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-weekly.yaml)
 [![rakudo:basic-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
+[![rakudo:rusty-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
 
 # TODOs
 - [ ] multiarch
