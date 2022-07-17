@@ -1,10 +1,8 @@
 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
-[![p6steve/rakudo:basic to Docker Hub](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-weekly.yaml)
 [![rakudo:basic-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
+[![rakudo:rusty-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
 
 # TODOs
-- [ ] multiarch
-- [ ] rakudo:rusty
 - [ ] rakudo:scipy
 - [ ] rakudo:ipyjk
 
@@ -22,12 +20,12 @@ Requirements:
 * can be implemented as GH actions (later)
 
 Approach / naming:
-| dir:         | from:                      | tag:                 |
-|--------------|----------------------------|----------------------|
-| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic |
-| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |
-| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |
-| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |
+| dir:         | from:                      | tag:                 | time:  |
+|--------------|----------------------------|----------------------|--------|
+| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min |
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |  |
+| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  |
+| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |  |
 
 Notes:
 1. We have two stacks here (ubuntu+rakudo+rust, jupyter+rakudo+Inline::Python)
