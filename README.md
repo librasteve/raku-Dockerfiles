@@ -1,6 +1,5 @@
 [![rakudo:basic -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
 [![rakudo:rusty -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
-
 [![rakudo:scipy -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-ma-weekly.yaml)
 [![rakudo:ipyjk -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml)
 
