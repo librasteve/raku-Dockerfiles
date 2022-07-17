@@ -22,12 +22,12 @@ Requirements:
 * can be implemented as GH actions (later)
 
 Approach / naming:
-| dir:         | from:                      | tag:                 |
-|--------------|----------------------------|----------------------|
-| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic |
-| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |
-| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |
-| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |
+| dir:         | from:                      | tag:                 | time:  |
+|--------------|----------------------------|----------------------|--------|
+| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min |
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |  |
+| rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  |
+| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |  |
 
 Notes:
 1. We have two stacks here (ubuntu+rakudo+rust, jupyter+rakudo+Inline::Python)
