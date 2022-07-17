@@ -1,4 +1,4 @@
-FROM p6steve/rakudo:scipy
+FROMn p6steve/rakudo:scipy
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
 LABEL tag="p6steve/rakudo:ipyjk"

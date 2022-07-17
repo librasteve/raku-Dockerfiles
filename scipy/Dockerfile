@@ -1,6 +1,6 @@
 FROM jupyter/scipy-notebook:latest
 #must have tag for Binder (not 'latest')
-#covers arm64 and amd64 with buildx
+#covers amd64 only 
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
 LABEL tag="p6steve/rakudo:basic"
@@ -14,8 +14,7 @@ RUN buildDeps="libc6-dev libencode-perl libzstd-dev libssl-dev \
                libncurses5-dev tk-dev liblzma-dev \
                python-openssl python3-dev libpython3.9-dev" \
     && apt-get update && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends build-essential curl wget $buildDeps \
-    && rm -rf /var/lib/apt/lists/* 
+    && apt-get install -y --no-install-recommends build-essential curl wget $buildDeps
 
 RUN mkdir ~/rakudo && cd ~/rakudo \
     && curl -LJO https://rakudo.org/latest/star/src \
