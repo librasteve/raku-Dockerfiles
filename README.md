@@ -26,8 +26,8 @@ Approach / naming:
 
 Notes:
 1. We have two stacks here ("no-jupe" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python)
-2. Multi arch is currently linux/arm64,linux/amd64
-3. Binder requires FROM jupyter/scipy-notebook:xxx to have a tag (not 'latest') - need to build manually for now
+2. Multi arch is [currently] linux/arm64,linux/amd64
+3. Binder requires FROM jupyter/scipy-notebook:xxx to have a tag (not 'latest')
 4. Binder & Lightsail require amd64
 
 # GH Actions
