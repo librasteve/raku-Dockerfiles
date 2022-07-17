@@ -3,8 +3,6 @@
 [![rakudo:rusty-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
 
 # TODOs
-- [ ] multiarch
-- [ ] rakudo:rusty
 - [ ] rakudo:scipy
 - [ ] rakudo:ipyjk
 
