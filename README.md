@@ -1,6 +1,7 @@
-[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 [![rakudo:basic-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
 [![rakudo:rusty-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
+[![rakudo:scipy-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-ma-weekly.yaml)
+[![rakudo:ipyjk-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml)
 
 # TODOs
 - [ ] rakudo:scipy
@@ -55,5 +56,6 @@ Client run:
 * ```jupyter notebook --port=8888 --no-browser --allow-root --ip=0.0.0.0```
 * ```http://ubuntu:8888``` in browser
 
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0
 copyright(c) 2022 Henley Cloud Consulting Ltd.
 
