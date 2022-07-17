@@ -6,7 +6,7 @@ on:
       - basic-ma/Dockerfile
       - .github/workflows/basic-ma-weekly.yaml
   schedule:
-      - cron: "21 3 * * 4"
+      - cron: "21 1 * * 4"
 
 jobs:
   build-basic-ma:
