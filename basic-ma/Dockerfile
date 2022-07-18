@@ -8,7 +8,7 @@ ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
     TERM=xterm
 
-ENV PATH=$PATH:$HOME/rakudo/bin:$HOME/rakudo/share/perl6/site/bin:$HOME/rakudo/share/perl6/vendor/bin:$HOME/rakudo/share/perl6/core/bin
+ENV PATH=$PATH:/root/rakudo/bin:/root/rakudo/share/perl6/site/bin:/root/rakudo/share/perl6/vendor/bin:/root/rakudo/share/perl6/core/bin
       
 RUN    apt-get update && apt-get upgrade -y \
     && apt-get install -y build-essential libssl-dev libreadline-dev git curl \
