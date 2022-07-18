@@ -18,7 +18,7 @@ RUN    apt-get update && apt-get upgrade -y \
     && mv rakudo-star-*/* . && rm -fr rakudo-star-* \
     && ./bin/rstar install
 
-RUN zef install Linenoise && zef uninstall Readline
+RUN zef install Linenoise App::Mi6 && zef uninstall Readline
 
 RUN apt-get install -y vim tree 
 
