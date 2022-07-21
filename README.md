@@ -54,7 +54,8 @@ Client run:
 * ```jupyter notebook --port=8888 --no-browser --allow-root --ip=0.0.0.0```
 * ```http://ubuntu:8888``` in browser
 
-[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0
+
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 
 copyright(c) 2022 Henley Cloud Consulting Ltd.
 
