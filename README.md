@@ -1,9 +1,9 @@
 [![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
 
-[![rakudo:basic-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
-[![rakudo:rusty-ma -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
-[![rakudo:scipy -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-weekly.yaml)
-[![rakudo:ipyjk -> DH](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-weekly.yaml)
+[![rakudo:basic](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
+[![rakudo:rusty](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
+[![rakudo:scipy](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/scipy-weekly.yaml)
+[![rakudo:ipyjk](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-weekly.yaml/badge.svg)](https://github.com/p6steve/raku-Dockerfiles/actions/workflows/ipyjk-weekly.yaml)
 
 # raku-Dockerfiles
 Common Dockerfiles for p6steve/raku modules (test and deploy)
