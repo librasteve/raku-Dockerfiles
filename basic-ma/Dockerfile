@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-#covers arm64 and amd64 with buildx
+#for both arm64 and amd64 using buildx
 
 LABEL maintainer="p6steve <p6steve@furnival.net>"
 LABEL tag="p6steve/rakudo:basic"
