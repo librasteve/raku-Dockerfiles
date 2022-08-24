@@ -24,7 +24,7 @@ Approach / naming:
 | rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min | no-jupe |    0   |  multiarch  |
 | rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min | no-jupe |    1   |  multiarch  |
 | rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  19min | jupyter |    0   | linux/amd64 |
-| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |        | jupyter |    1   | linux/amd64 |
+| rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |  15min | jupyter |    1   | linux/amd64 |
 
 Notes:
 1. We have two stacks here ("no-jupe" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python)
