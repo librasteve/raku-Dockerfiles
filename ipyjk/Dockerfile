@@ -5,7 +5,7 @@ LABEL tag="p6steve/rakudo:ipyjk"
 
 RUN    zef install https://github.com/niner/Inline-Python.git --exclude="python3"
 RUN    zef install --/test Text::CSV
-RUN    zef -v install git://github.com/bduggan/p6-jupyter-kernel.git
+RUN    zef install git://github.com/bduggan/p6-jupyter-kernel.git
 RUN    jupyter-kernel.raku --generate-config
 
 #USER ${NB_UID}
