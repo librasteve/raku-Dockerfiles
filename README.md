@@ -34,7 +34,7 @@ Notes:
 
 # GH Actions
 
-Each Dockerfile has a weekly build GitHub Action that pushes the latest image to Docker Hub. These take ~85 mins each (!) to run. You can go much faster on a laptop.
+Each Dockerfile has a weekly build GitHub Action that pushes the latest image to Docker Hub. See Action stats for typical build times.
 
 # Docker Instructions
 
@@ -45,11 +45,18 @@ Client build arm64 on M1 vftools:
 
 Client build amd64 on M1 Docker Desktop:
 
-Client run:
+??
+
+Client run arm64 on M1 vftools:
 
 * ```docker run -it -p 8888:8888 p6steve/raku-dan:pandas-2022.02-arm64```
 * ```docker ps```
 * ```docker exec -it cont_name /bin/bash```
+
+Client run amd64 on M1 Docker Desktop:
+
+* ```docker run -it --platform linux/amd64 -p 8888:8888 p6steve/rakudo:ipyjk```
+[NB. --platform selector MUST coe BEFORE --port number!]
 
 # Jupyter Instructions
 
