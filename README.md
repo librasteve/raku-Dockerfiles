@@ -40,28 +40,30 @@ Each Dockerfile has a weekly build GitHub Action that pushes the latest image to
 
 Client build arm64 on M1 vftools:
 
-* ```docker build --no-cache -t p6steve/rakudo:scipynb-2022.02-arm64 .```
-* ```docker push p6steve/rakudo:scipynb-2022.02-arm64```
+* ```docker build --no-cache -t p6steve/rakudo:scipynb-arm64 .```
+* ```docker push p6steve/rakudo:scipynb-arm64```
 
 Client build amd64 on M1 Docker Desktop:
 
-??
+* ```docker build -t p6steve/raku-dan:pandas-amd64 --platform=linux/amd64 .```
+* ```docker push p6steve/raku-dan:pandas-amd64```
 
 Client run arm64 on M1 vftools:
 
-* ```docker run -it -p 8888:8888 p6steve/raku-dan:pandas-2022.02-arm64```
+* ```docker run -it -p 8888:8888 p6steve/raku-dan:pandas-arm64```
 * ```docker ps```
 * ```docker exec -it cont_name /bin/bash```
 
 Client run amd64 on M1 Docker Desktop:
 
 * ```docker run -it --platform linux/amd64 -p 8888:8888 p6steve/rakudo:ipyjk```
-[NB. --platform selector MUST coe BEFORE --port number!]
+[NB. --platform selector MUST come BEFORE --port number!]
 
 # Jupyter Instructions
 
-* ```jupyter notebook --port=8888 --no-browser --allow-root --ip=0.0.0.0```
-* ```http://ubuntu:8888``` in browser
+* ```jupyter notebook --port=8888 --no-browser --allow-root --ip=0.0.0.0``` (for classic notebook)
+* ```jupyter lab --port=8888 --no-browser --allow-root --ip=0.0.0.0``` (for console view)
+* ```http://ubuntu:8888``` in browser (cut & paste token ID from CLI)
 
 copyright(c) 2022 Henley Cloud Consulting Ltd.
 
