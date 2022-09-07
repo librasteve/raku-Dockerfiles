@@ -8,33 +8,28 @@
 # raku-Dockerfiles
 Common Dockerfiles for p6steve/raku modules (test and deploy)
 
-Requirements:
-* staged
+Features:
+* stacked
 * run as CLI (default)
 * easy start jupyter-notebook (local)
-* binder compatible (if possible)
-* covers --platform linux/arm64, linux/amd64
+* covers --platform linux/arm64, linux/amd64 (where possible)
 * combined with buildx as single image
-* stacked, but limited branching
-* weekly latest as GH actions
+* weekly latest to DockerHub
+* implemented as GitHub Actions
 
 Approach / naming:
 | dir:         | from:                      | tag:                 | time:  | stack:  | layer: | platform:   |
 |--------------|----------------------------|----------------------|--------|---------|--------|-------------|
-| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min | no-jupe |    0   |  multiarch  |
-| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min | no-jupe |    1   |  multiarch  |
+| rakudo-basic | ubuntu:latest              | p6steve/rakudo:basic | 100min | rust    |    0   |  multiarch  |
+| rakudo-rusty | p6steve/rakudo:basic       | p6steve/rakudo:rusty |   3min | rust    |    1   |  multiarch  |
 | rakudo-scipy | jupyter/scipy-notebook:... | p6steve/rakudo:scipy |  19min | jupyter |    0   | linux/amd64 |
 | rakudo-ipyjk | p6steve/rakudo:scipy       | p6steve/rakudo:ipyjk |  15min | jupyter |    1   | linux/amd64 |
 
 Notes:
-1. We have two stacks here ("no-jupe" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python)
+1. We have two stacks here ("rust" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python)
 2. Multi arch is [currently] linux/arm64,linux/amd64
 3. Binder requires FROM jupyter/scipy-notebook:xxx to have a tag (not 'latest')
 4. Binder & Lightsail require amd64
-
-# GH Actions
-
-Each Dockerfile has a weekly build GitHub Action that pushes the latest image to Docker Hub. See Action stats for typical build times.
 
 # Docker Instructions
 
