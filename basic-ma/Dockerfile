@@ -36,3 +36,5 @@ set fileencodings=utf-8\n \
 set encoding=utf-8\n \
 ' >> ~/.vimrc
 
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
+RUN apt-get install awscli -y
