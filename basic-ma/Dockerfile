@@ -34,6 +34,10 @@ set textwidth=127\n \
 set fileformat=unix\n \
 set fileencodings=utf-8\n \
 set encoding=utf-8\n \
+set foldmethod=indent \
+set foldnestmax=10 \
+set nofoldenable \
+set foldlevel=2 \
 ' >> ~/.vimrc
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
