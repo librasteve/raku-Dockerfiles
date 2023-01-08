@@ -33,10 +33,12 @@ Notes:
 
 # Docker Instructions
 
+_following is "instructions to self" for manual build/run ... see GHA for the auto pipeline_
+
 Client build arm64 on M1 vftools:
 
-* ```docker build --no-cache -t p6steve/rakudo:scipynb-arm64 .```
-* ```docker push p6steve/rakudo:scipynb-arm64```
+* ```docker build --no-cache -t p6steve/rakudo:scipynb .```
+* ```docker push p6steve/rakudo:scipynb```
 
 Client build amd64 on M1 Docker Desktop:
 
