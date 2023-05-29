@@ -35,7 +35,7 @@ jobs:
         with:
           context: rusty-ma
           file: ./rusty-ma/Dockerfile
-          tags: p6steve/rakudo:rusty
+          tags: librasteve/rakudo:rusty
           push: true
           platforms: linux/arm64,linux/amd64
 

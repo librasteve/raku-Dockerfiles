@@ -1,8 +1,8 @@
 FROM jupyter/scipy-notebook:4b830d5897d8
 #must have tag for Binder (not 'latest')
 
-LABEL maintainer="p6steve <p6steve@furnival.net>"
-LABEL tag="p6steve/rakudo:scipy"
+LABEL maintainer="librasteve <librasteve@furnival.net>"
+LABEL tag="librasteve/rakudo:scipy"
 
 USER root
 

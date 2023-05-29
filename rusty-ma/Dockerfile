@@ -1,7 +1,7 @@
-FROM p6steve/rakudo:basic
+FROM librasteve/rakudo:basic
 
-LABEL maintainer="p6steve <p6steve@furnival.net>"
-LABEL tag="p6steve/rakudo:rusty"
+LABEL maintainer="librasteve <librasteve@furnival.net>"
+LABEL tag="librasteve/rakudo:rusty"
 
 ENV PATH=$PATH:~/.cargo/bin
 

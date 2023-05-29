@@ -1,7 +1,7 @@
-FROM p6steve/rakudo:scipy
+FROM librasteve/rakudo:scipy
 
-LABEL maintainer="p6steve <p6steve@furnival.net>"
-LABEL tag="p6steve/rakudo:ipyjk"
+LABEL maintainer="librasteve <librasteve@furnival.net>"
+LABEL tag="librasteve/rakudo:ipyjk"
 
 RUN    zef install https://github.com/niner/Inline-Python.git --exclude="python3"
 RUN    zef install --/test Text::CSV

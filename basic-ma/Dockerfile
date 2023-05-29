@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 #for both arm64 and amd64 using buildx
 
-LABEL maintainer="p6steve <p6steve@furnival.net>"
-LABEL tag="p6steve/rakudo:basic"
+LABEL maintainer="librasteve <librasteve@furnival.net>"
+LABEL tag="librasteve/rakudo:basic"
 
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
