@@ -26,7 +26,7 @@ Approach / naming:
 | rakudo-ipyjk | librasteve/rakudo:scipy       | librasteve/rakudo:ipyjk |  15min | jupyter |    1   | linux/amd64 |
 
 Notes:
-1. We have two stacks here ("rust" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python)
+1. We have two stacks here ("rust" = ubuntu+rakudo+rust, "jupyter" = jupyter+rakudo+Inline::Python+rust)
 2. Multi arch is [currently] linux/arm64,linux/amd64
 3. Binder requires FROM jupyter/scipy-notebook:xxx to have a tag (not 'latest')
 4. Binder & Lightsail require amd64
