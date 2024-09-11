@@ -6,7 +6,7 @@ on:
       - ipyjk/Dockerfile
       - .github/workflows/ipyjk-weekly.yaml
   schedule:
-      - cron: "44 3 * * 4"
+      - cron: "44 3 * * 5"
 
 jobs:
   build-ipyjk:
