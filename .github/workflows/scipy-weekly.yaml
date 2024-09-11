@@ -6,7 +6,7 @@ on:
       - scipy/Dockerfile
       - .github/workflows/scipy-weekly.yaml
   schedule:
-      - cron: "23 1 * * 7"
+      - cron: "22 1 * * 6"
 
 jobs:
   build-scipy:
