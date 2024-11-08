@@ -39,4 +39,3 @@ set foldlevel=2\n \
 ' >> ~/.vimrc
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
-RUN apt-get install awscli -y
