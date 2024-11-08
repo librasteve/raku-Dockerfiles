@@ -62,5 +62,5 @@ Client run amd64 on M1 Docker Desktop:
 * ```jupyter lab --port=8888 --no-browser --allow-root --ip=0.0.0.0``` (for console view)
 * ```http://ubuntu:8888``` in browser (cut & paste token ID from CLI)
 
-copyright(c) 2022-2023 Henley Cloud Consulting Ltd.
+copyright(c) 2024 Henley Cloud Consulting Ltd.
 
