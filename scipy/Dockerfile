@@ -1,5 +1,4 @@
-FROM jupyter/scipy-notebook:4b830d5897d8
-#must have tag for Binder (not 'latest')
+FROM jupyter/scipy-notebook:latest
 
 LABEL maintainer="librasteve <librasteve@furnival.net>"
 LABEL tag="librasteve/rakudo:scipy"
@@ -9,7 +8,7 @@ USER root
 RUN buildDeps="libc6-dev libencode-perl libzstd-dev libssl-dev \
                libbz2-dev libreadline-dev libsqlite3-dev llvm \
                libncurses5-dev tk-dev liblzma-dev \
-               python-openssl python3-dev libpython3.9-dev" \
+               python3-openssl python3-dev libpython3.10-dev" \
     && apt-get update && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends build-essential curl wget $buildDeps \
     && rm -rf /var/lib/apt/lists/* 
