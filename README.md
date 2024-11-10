@@ -12,7 +12,7 @@ Features:
 * stacked
 * run as CLI (default)
 * easy start jupyter-notebook (local)
-* covers --platform linux/arm64, linux/amd64 (where possible)
+* covers --platform linux/arm64, linux/amd64
 * combined with buildx as single image
 * weekly latest to DockerHub
 * implemented as GitHub Actions
