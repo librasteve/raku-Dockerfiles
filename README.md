@@ -3,7 +3,7 @@
 [![rakudo:basic](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml/badge.svg)](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/basic-ma-weekly.yaml)
 [![rakudo:rusty](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml/badge.svg)](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/rusty-ma-weekly.yaml)
 [![rakudo:scipy](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/scipy-weekly.yaml/badge.svg)](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/scipy-weekly.yaml)
-[![rakudo:ipyjk](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/ipyjk-weekly.yaml/badge.svg)](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/ipyjk-weekly.yaml)
+[![rakudo:ipyjk -> DH](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml/badge.svg)](https://github.com/librasteve/raku-Dockerfiles/actions/workflows/ipyjk-ma-weekly.yaml)
 
 # raku-Dockerfiles
 Common Dockerfiles for librasteve/raku modules (test and deploy)
