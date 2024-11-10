@@ -7,6 +7,7 @@ ENV PATH=$PATH:~/.cargo/bin
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y 
 
 RUN    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(dirname $(which python))
+ENV    LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(dirname $(which python))
 RUN    zef install Inline::Python --exclude="python3" --/test
 RUN    zef install --/test Text::CSV
 RUN    zef install zef install 'Jupyter::Kernel:auth<zef:bduggan>' --verbose 
