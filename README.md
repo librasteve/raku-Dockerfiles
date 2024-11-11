@@ -34,18 +34,18 @@ Notes:
 
 _following is "instructions to self" for manual build/run ... see GHA for the auto pipeline_
 
-_Enable the containerd image store in the Docker Desktop settings for buildx support_
-
 Client build ma on Docker Desktop:
 
 * ```docker buildx build -t librasteve/rakudo:basic .```
 * ```docker push librasteve/rakudo:basic```
 
+[NB. _Enable the containerd image store in the Docker Desktop settings for buildx support]
+
 Client run amd64 on M1 Docker Desktop:
 
 * ```docker run -it -p 8888:8888 librasteve/rakudo:ipyjk```
 
-[NB. --platform selector=linux/arm64 (or amd64) no longer needed, if used it MUST come BEFORE --port number!]
+[NB. `--platform selector=linux/arm64` (or amd64) no longer needed, if used it MUST come BEFORE --port number!]
 
 # Jupyter Instructions
 
