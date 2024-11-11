@@ -33,6 +33,7 @@ Notes:
 # Docker Instructions
 
 _following is "instructions to self" for manual build/run ... see GHA for the auto pipeline_
+_Enable the containerd image store in the Docker Desktop settings for buildx support_
 
 Client build ma on Docker Desktop:
 
