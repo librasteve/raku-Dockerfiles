@@ -34,26 +34,16 @@ Notes:
 
 _following is "instructions to self" for manual build/run ... see GHA for the auto pipeline_
 
-Client build arm64 on M1 vftools:
+Client build ma on Docker Desktop:
 
-* ```docker build --no-cache -t librasteve/rakudo:scipynb .```
-* ```docker push librasteve/rakudo:scipynb```
-
-Client build amd64 on M1 Docker Desktop:
-
-* ```docker build -t librasteve/raku-dan:pandas-amd64 --platform=linux/amd64 .```
-* ```docker push librasteve/raku-dan:pandas-amd64```
-
-Client run arm64 on M1 vftools:
-
-* ```docker run -it -p 8888:8888 librasteve/raku-dan:pandas-arm64```
-* ```docker ps```
-* ```docker exec -it cont_name /bin/bash```
+* ```docker buildx build -t librasteve/rakudo:basic .```
+* ```docker push librasteve/rakudo:basic```
 
 Client run amd64 on M1 Docker Desktop:
 
-* ```docker run -it --platform linux/amd64 -p 8888:8888 librasteve/rakudo:ipyjk```
-[NB. --platform selector MUST come BEFORE --port number!]
+* ```docker run -it -p 8888:8888 librasteve/rakudo:ipyjk```
+
+[NB. --platform selector=linux/arm64 (or amd64) no longer needed, if used it MUST come BEFORE --port number!]
 
 # Jupyter Instructions
 
